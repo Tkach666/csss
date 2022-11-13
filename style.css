@@ -1,0 +1,228 @@
+body{
+    background-color: whitesmoke;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a {
+    color: black;
+    text-decoration: none;      /*убирает подчеркивание*/
+    margin-bottom: 20px;
+}
+
+/*выделение текста при наведении мышки */
+a:hover{
+    text-decoration: underline;        
+}
+
+/* изменение цвета после нажатия */
+a:active{
+    color: blue;
+}
+
+/* изменение цвета после посещения */
+a:visited{
+    color: brown;
+}
+
+.avatar{
+    width: 300px;
+    height: 300px;
+    border-radius:50%;
+    box-shadow: 5px 5px 5px red;
+}
+
+.info p{
+    color: #45a1ff;
+    margin: 0;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: none;
+    letter-spacing: 1px; 
+    word-spacing: 42px;             /*отступление между словами*/
+}
+
+.info{
+    margin-bottom: 30px;
+    display: flex;
+    
+}
+
+/* Установка размера */
+@media (max-width: 700px){
+    .info{
+        text-align: center;
+        display: block;
+    }
+}
+
+.info-text{
+    margin-left: 20px;
+}
+
+/* Псевдосилекторы */
+.table td:nth-child(1),
+.table td:nth-child(3){
+    color:blue;
+}
+
+.table tr:nth-child(odd){
+    background: darksalmon;
+}
+
+.table tr:nth-child(even){
+    background: darkcyan;
+}
+
+
+.card h2{
+    margin-bottom: 10px;
+}
+
+.social{
+    background: dimgrey;
+    padding: 15px;
+    border-style: solid;
+    border-color: crimson;
+}
+
+.conteiner{
+    width: 750px;
+    margin: auto;
+    padding-top: 30px;
+    margin-top: 60px;
+}
+
+.table{
+    width: 100%;
+    /* border-style: solid; */
+}
+
+.table td{
+    padding-bottom: 20px;       /*отступление между строками в таблице*/
+
+}
+
+.card{
+    padding: 15px 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;    /*закругление углов*/
+}
+
+.bg-yellow{
+    background: #fff9dc;
+}
+
+.bg-green{
+   background:#e5ffe7;
+}
+
+.bg-red{
+    background: #ffe5e5;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: gray;
+    color: brown;
+    height: 50px;
+    
+}
+
+.list {
+    /* padding: 0; */
+}
+
+.list li{
+    color: #45a1ff;
+    margin-bottom: 5px;
+    border-style: 2px solid red;
+}
+
+.link-list{
+    list-style: none;
+    padding: 0;
+
+}
+
+.link-list li{
+    margin-bottom: 10px;
+    padding-bottom: 5px; 
+    border-bottom: 1px solid blue;
+}
+
+.contact h2{
+    text-align: center;
+}
+
+.from-group label{
+    display: block;
+    font-size: 14px;
+    color: green;
+}
+
+.from-group input,
+.from-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    background: transparent; 
+    border: none;
+    border-bottom: 1px solid #ccc;
+    color: black;
+    padding: 15px 10px;
+    outline: none;
+    font-family: inherit;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .from-group{
+    width: 50%;
+    margin-right: 20px;
+}
+
+.btn{
+    color: white;
+    padding: 15px 20px;
+    background: black;
+    border: none;
+    font-family: inherit;       /*стиль наследуется*/
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+
+
+
+/* Position */
+
+.position{
+    position: relative;
+    border: 4px solid black;
+    margin-top: 40px;
+    padding: 20px;
+    margin-bottom: 250px;
+    height: 100px;
+}
+
+.box{
+    position: fixed;
+    right: 50px;
+    top: 0;
+    left: 0px; 
+    bottom: 50%; 
+    /* border-radius: 10%; */
+    width: 100%;
+    height: 50px;
+    background: deeppink;
+}
